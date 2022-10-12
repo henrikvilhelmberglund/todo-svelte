@@ -1,4 +1,5 @@
 <script>
+  import viteLogo from '/vite.svg'
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
 </script>
@@ -6,7 +7,7 @@
 <main>
   <div>
     <a href="https://vitejs.dev" target="_blank"> 
-      <img src="/vite.svg" class="logo" alt="Vite Logo" />
+      <img src={viteLogo} class="logo" alt="Vite Logo" />
     </a>
     <a href="https://svelte.dev" target="_blank"> 
       <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
