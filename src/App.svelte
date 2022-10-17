@@ -1,6 +1,7 @@
 <script>
   import Nested from "./Nested.svelte";
   import Info from "./Info.svelte";
+  import { each } from "svelte/internal";
   let name = "world";
   let src = "image.gif";
   let string = `this string contains some <strong>HTML!!!</strong>`;
@@ -36,6 +37,12 @@
   }
 
   let x = 7;
+
+  let cats = [
+    { id: "J---aiyznGQ", name: "Keyboard Cat" },
+    { id: "z_AbfPXTKms", name: "Maru" },
+    { id: "OUtn3pvWmpg", name: "Henri The Existential Cat" },
+  ];
 </script>
 
 <main>
@@ -67,6 +74,18 @@
   {:else}
     <p>{x} is between 5 and 10</p>
   {/if}
+
+  <h2>The Famous Cats of YouTube</h2>
+
+  <ul>
+    {#each cats as cat, i}
+      <li>
+        <a target="_blank" href="https://www.youtube.com/watch?v={cat.id}">
+          {i + 1}: {cat.name}
+        </a>
+      </li>
+    {/each}
+  </ul>
 </main>
 
 <style>
