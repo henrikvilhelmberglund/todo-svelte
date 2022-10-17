@@ -3,6 +3,7 @@
   import Info from "./Info.svelte";
   import Thing from "./Thing.svelte";
   import Inner from "./Inner.svelte";
+  import Outer from "./Outer.svelte";
 
   let name = "world";
   let src = "image.gif";
@@ -120,19 +121,19 @@
   <!-- await stuff
   {#await promise}
 	<p>...waiting</p>
-{:then number}
+  {:then number}
 	<p>The number is {number}</p>
-{:catch error}
+  {:catch error}
 	<p style="color: red">{error.message}</p>
-{/await}
-
-or
-
-{#await promise then value}
-	<p>the value is {value}</p>
-{/await}
+  {/await}
   
-  -->
+  or
+  
+  {#await promise then value}
+	<p>the value is {value}</p>
+  {/await}
+  
+-->
 
   <div on:mousemove={(e) => (m = { x: e.clientX, y: e.clientY })}>
     The mouse position is {m.x} x {m.y}
@@ -153,6 +154,7 @@ or
   e.g. on:click|once|capture=~{}.  -->
 
   <Inner on:message={handleMessage} />
+  <Outer on:message={handleMessage} />
 </main>
 
 <style>
