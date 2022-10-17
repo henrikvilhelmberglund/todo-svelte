@@ -1,7 +1,8 @@
 <script>
   import Nested from "./Nested.svelte";
   import Info from "./Info.svelte";
-  import { each } from "svelte/internal";
+  import Thing from "./Thing.svelte";
+
   let name = "world";
   let src = "image.gif";
   let string = `this string contains some <strong>HTML!!!</strong>`;
@@ -43,6 +44,20 @@
     { id: "z_AbfPXTKms", name: "Maru" },
     { id: "OUtn3pvWmpg", name: "Henri The Existential Cat" },
   ];
+
+  let things = [
+    { id: 1, name: "apple" },
+    { id: 2, name: "banana" },
+    { id: 3, name: "carrot" },
+    { id: 4, name: "doughnut" },
+    { id: 5, name: "egg" },
+  ];
+
+  function handleClick() {
+    things = things.slice(1);
+  }
+
+  let m = { x: 0, y: 0 };
 </script>
 
 <main>
@@ -86,6 +101,33 @@
       </li>
     {/each}
   </ul>
+
+  <button on:click={handleClick}> Remove first thing </button>
+
+  {#each things as thing (thing.id)}
+    <Thing name={thing.name} />
+  {/each}
+
+  <!-- await stuff
+  {#await promise}
+	<p>...waiting</p>
+{:then number}
+	<p>The number is {number}</p>
+{:catch error}
+	<p style="color: red">{error.message}</p>
+{/await}
+
+or
+
+{#await promise then value}
+	<p>the value is {value}</p>
+{/await}
+  
+  -->
+
+  <div on:mousemove={(e) => (m = { x: e.clientX, y: e.clientY })}>
+    The mouse position is {m.x} x {m.y}
+  </div>
 </main>
 
 <style>
@@ -93,5 +135,9 @@
     color: purple;
     font-family: "Comic Sans MS", cursive;
     font-size: 2em;
+  }
+  div {
+    width: 100%;
+    height: 100%;
   }
 </style>
