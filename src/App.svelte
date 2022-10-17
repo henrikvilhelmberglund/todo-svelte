@@ -1,5 +1,6 @@
 <script>
   import Nested from "./Nested.svelte";
+  import Info from "./Info.svelte";
   let name = "world";
   let src = "image.gif";
   let string = `this string contains some <strong>HTML!!!</strong>`;
@@ -22,6 +23,12 @@
     numbers = [...numbers, numbers.length + 1];
   }
   $: sum = numbers.reduce((t, n) => t + n, 0);
+  const pkg = {
+    name: "svelte",
+    version: 3,
+    speed: "blazing",
+    website: "https://svelte.dev",
+  };
 </script>
 
 <main>
@@ -39,6 +46,7 @@
   <p>{numbers.join(" + ")} = {sum}</p>
 
   <button on:click={addNumber}> Add a number </button>
+  <Info {...pkg} />
 </main>
 
 <style>
