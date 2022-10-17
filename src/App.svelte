@@ -4,6 +4,7 @@
   import Thing from "./Thing.svelte";
   import Inner from "./Inner.svelte";
   import Outer from "./Outer.svelte";
+  import CustomButton from "./CustomButton.svelte";
 
   let name = "world";
   let src = "image.gif";
@@ -67,6 +68,10 @@
 
   function handleMessage(event) {
     alert(event.detail.text);
+  }
+
+  function handleClickNew2() {
+    alert("Button Clicked");
   }
 </script>
 
@@ -155,6 +160,7 @@
 
   <Inner on:message={handleMessage} />
   <Outer on:message={handleMessage} />
+  <CustomButton on:click={handleClickNew2} />
 </main>
 
 <style>
