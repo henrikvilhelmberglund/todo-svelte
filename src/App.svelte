@@ -84,6 +84,8 @@
   let scoops = 1;
   let flavours = ["Mint choc chip"];
 
+  let menu = ["Cookies and cream", "Mint choc chip", "Raspberry ripple"];
+
   function join(flavours) {
     if (flavours.length === 1) return flavours[0];
     return `${flavours.slice(0, -1).join(", ")} and ${
@@ -229,35 +231,17 @@
 
   <h2>Flavours</h2>
 
-  <label>
-    <input
-      type="checkbox"
-      bind:group={flavours}
-      name="flavours"
-      value="Cookies and cream"
-    />
-    Cookies and cream
-  </label>
-
-  <label>
-    <input
-      type="checkbox"
-      bind:group={flavours}
-      name="flavours"
-      value="Mint choc chip"
-    />
-    Mint choc chip
-  </label>
-
-  <label>
-    <input
-      type="checkbox"
-      bind:group={flavours}
-      name="flavours"
-      value="Raspberry ripple"
-    />
-    Raspberry ripple
-  </label>
+  {#each menu as flavour}
+    <label>
+      <input
+        type="checkbox"
+        bind:group={flavours}
+        name="flavours"
+        value={flavour}
+      />
+      {flavour}
+    </label>
+  {/each}
 
   {#if flavours.length === 0}
     <p>Please select at least one flavour</p>
