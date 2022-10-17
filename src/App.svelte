@@ -1,9 +1,18 @@
 <script>
+  let name = "world";
+  let src = "/src/image.gif";
 </script>
 
 <main>
-  <h1>Hello world!!!</h1>
+  <h1>Hello {name.toUpperCase()}!!!</h1>
+  <img {src} alt="a man dances" />
+  <p>This is a paragraph.</p>
 </main>
 
 <style>
+  p {
+    color: purple;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 2em;
+  }
 </style>
