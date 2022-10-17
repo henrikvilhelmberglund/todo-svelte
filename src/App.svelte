@@ -2,6 +2,7 @@
   import Nested from "./Nested.svelte";
   import Info from "./Info.svelte";
   import Thing from "./Thing.svelte";
+  import Inner from "./Inner.svelte";
 
   let name = "world";
   let src = "image.gif";
@@ -61,6 +62,10 @@
 
   function handleClickNew() {
     alert("no more alerts");
+  }
+
+  function handleMessage(event) {
+    alert(event.detail.text);
   }
 </script>
 
@@ -135,7 +140,7 @@ or
 
   <button on:click|once={handleClickNew}> Click me </button>
 
-   <!-- The full list of modifiers: preventDefault — calls event.preventDefault()
+  <!-- The full list of modifiers: preventDefault — calls event.preventDefault()
   before running the handler. Useful for client-side form handling, for example.
   stopPropagation — calls event.stopPropagation(), preventing the event reaching
   the next element passive — improves scrolling performance on touch/wheel
@@ -146,6 +151,8 @@ or
   element itself trusted — only trigger handler if event.isTrusted is true. I.e.
   if the event is triggered by a user action. You can chain modifiers together,
   e.g. on:click|once|capture=~{}.  -->
+
+  <Inner on:message={handleMessage} />
 </main>
 
 <style>
