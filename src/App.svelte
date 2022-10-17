@@ -252,17 +252,13 @@
 
   <h2>Flavours</h2>
 
-  {#each menu as flavour}
-    <label>
-      <input
-        type="checkbox"
-        bind:group={flavours}
-        name="flavours"
-        value={flavour}
-      />
-      {flavour}
-    </label>
-  {/each}
+  <select multiple bind:value={flavours}>
+    {#each menu as flavour}
+      <option value={flavour}>
+        {flavour}
+      </option>
+    {/each}
+  </select>
 
   {#if flavours.length === 0}
     <p>Please select at least one flavour</p>
