@@ -28,7 +28,7 @@
   <h1>Hello {name.toUpperCase()}!!!</h1>
   <img {src} alt="a man dances" />
   <p>This is a paragraph.</p>
-  <Nested />
+  <Nested answer="42" />
   <p>{@html string}</p>
   <button on:click={incrementCount}>
     Clicked {count}
