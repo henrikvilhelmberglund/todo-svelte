@@ -58,6 +58,10 @@
   }
 
   let m = { x: 0, y: 0 };
+
+  function handleClickNew() {
+    alert("no more alerts");
+  }
 </script>
 
 <main>
@@ -128,6 +132,8 @@ or
   <div on:mousemove={(e) => (m = { x: e.clientX, y: e.clientY })}>
     The mouse position is {m.x} x {m.y}
   </div>
+
+  <button on:click|once={handleClickNew}> Click me </button>
 </main>
 
 <style>
