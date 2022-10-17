@@ -1,7 +1,7 @@
 <script>
   import Nested from "./Nested.svelte";
   let name = "world";
-  let src = "/src/assets/image.gif";
+  let src = "/public/image.gif";
 </script>
 
 <main>
