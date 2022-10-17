@@ -260,6 +260,19 @@
     {/each}
   </select>
 
+  <!-- was this before -->
+  <!-- {#each menu as flavour}
+    <label>
+      <input
+        type="checkbox"
+        bind:group={flavours}
+        name="flavours"
+        value={flavour}
+      />
+      {flavour}
+    </label>
+  {/each} -->
+
   {#if flavours.length === 0}
     <p>Please select at least one flavour</p>
   {:else if flavours.length > scoops}
