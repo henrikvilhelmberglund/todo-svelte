@@ -344,6 +344,10 @@
   <button on:click={add}> Add new </button>
 
   <button on:click={clear}> Clear completed </button>
+
+  <!-- 
+    Note that interacting with these <input> elements will mutate the array. If you prefer to work with immutable data, you should avoid these bindings and use event handlers instead.
+   -->
 </main>
 
 <style>
