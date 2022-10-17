@@ -29,6 +29,7 @@
   <img {src} alt="a man dances" />
   <p>This is a paragraph.</p>
   <Nested answer="42" />
+  <Nested />
   <p>{@html string}</p>
   <button on:click={incrementCount}>
     Clicked {count}
