@@ -135,7 +135,7 @@ or
 
   <button on:click|once={handleClickNew}> Click me </button>
 
-  /* The full list of modifiers: preventDefault — calls event.preventDefault()
+   <!-- The full list of modifiers: preventDefault — calls event.preventDefault()
   before running the handler. Useful for client-side form handling, for example.
   stopPropagation — calls event.stopPropagation(), preventing the event reaching
   the next element passive — improves scrolling performance on touch/wheel
@@ -145,7 +145,7 @@ or
   the first time it runs self — only trigger handler if event.target is the
   element itself trusted — only trigger handler if event.isTrusted is true. I.e.
   if the event is triggered by a user action. You can chain modifiers together,
-  e.g. on:click|once|capture=~. */
+  e.g. on:click|once|capture=~{}.  -->
 </main>
 
 <style>
