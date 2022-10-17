@@ -113,6 +113,8 @@
       `answered question ${selected.id} (${selected.text}) with "${answer}"`
     );
   }
+
+  let html = "<p>Write some text!</p>";
 </script>
 
 <main>
@@ -306,6 +308,10 @@
   </form>
 
   <p>selected question {selected ? selected.id : "[waiting...]"}</p>
+
+  <div contenteditable="true" bind:innerHTML={html} />
+
+  <pre>{html}</pre>
 </main>
 
 <style>
@@ -336,5 +342,11 @@
     display: block;
     width: 500px;
     max-width: 100%;
+  }
+
+  [contenteditable] {
+    padding: 0.5em;
+    border: 1px solid #eee;
+    border-radius: 4px;
   }
 </style>
