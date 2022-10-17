@@ -92,6 +92,8 @@
       flavours[flavours.length - 1]
     }`;
   }
+
+  let value = `Some words are *italic*, some are **bold**`;
 </script>
 
 <main>
@@ -254,6 +256,10 @@
       of {join(flavours)}
     </p>
   {/if}
+
+  {@html value}
+
+  <textarea bind:value />
 </main>
 
 <style>
@@ -273,5 +279,10 @@
   input,
   p {
     margin: 6px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 200px;
   }
 </style>
