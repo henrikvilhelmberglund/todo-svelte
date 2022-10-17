@@ -73,6 +73,8 @@
   function handleClickNew2() {
     alert("Button Clicked");
   }
+
+  let nameNew = "world";
 </script>
 
 <main>
@@ -160,7 +162,11 @@
 
   <Inner on:message={handleMessage} />
   <Outer on:message={handleMessage} />
+
   <CustomButton on:click={handleClickNew2} />
+
+  <input bind:value={nameNew} />
+  <h2>Hello {nameNew}!</h2>
 </main>
 
 <style>
