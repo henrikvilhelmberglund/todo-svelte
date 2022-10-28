@@ -22,6 +22,7 @@
   import BindingEachBlock from "./BindingEachBlock.svelte";
   import BindingMediaElements from "./BindingMediaElements.svelte";
   import BindingDimensions from "./BindingDimensions.svelte";
+  import BindingThis from "./BindingThis.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -103,6 +104,9 @@
   </div>
   <div class="border-div">
     <BindingDimensions />
+  </div>
+  <div class="border-div">
+    <BindingThis />
   </div>
 </main>
 
