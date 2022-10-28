@@ -21,6 +21,7 @@
   import BindingSelectBindings from "./BindingSelectBindings.svelte";
   import BindingEachBlock from "./BindingEachBlock.svelte";
   import BindingMediaElements from "./BindingMediaElements.svelte";
+  import BindingDimensions from "./BindingDimensions.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -32,32 +33,77 @@
 </script>
 
 <main>
-  <Introduction />
+  <div class="border-div">
+    <Introduction />
+  </div>
 
-  <Nested answer="42" />
-  <Nested />
+  <div class="border-div">
+    <Nested answer="42" />
+    <Nested />
+  </div>
 
-  <Statements />
-  <UpdatingArraysAndObjects />
+  <div class="border-div">
+    <Statements />
+  </div>
+  <div class="border-div">
+    <UpdatingArraysAndObjects />
+  </div>
 
-  <Inner on:message={handleMessage} />
-  <Outer on:message={handleMessage} />
+  <div class="border-div">
+    <Inner on:message={handleMessage} />
+  </div>
+  <div class="border-div">
+    <Outer on:message={handleMessage} />
+  </div>
 
-  <Else />
-  <ElseIfBlocks />
-  <EachBlocks />
-  <AwaitBlocks />
-  <InlineHandlers />
-  <EventModifiers />
-  <CustomButton on:click={handleClick} />
-  <BindingTextInputs />
-  <BindingNumericInputs />
-  <BindingCheckboxInput />
-  <BindingGroupInputs />
-  <BindingTextAreaInput />
-  <BindingSelectBindings />
-  <BindingEachBlock />
-  <BindingMediaElements />
+  <div class="border-div">
+    <Else />
+  </div>
+  <div class="border-div">
+    <ElseIfBlocks />
+  </div>
+  <div class="border-div">
+    <EachBlocks />
+  </div>
+  <div class="border-div">
+    <AwaitBlocks />
+  </div>
+  <div class="border-div">
+    <InlineHandlers />
+  </div>
+  <div class="border-div">
+    <EventModifiers />
+  </div>
+  <div class="border-div">
+    <CustomButton on:click={handleClick} />
+  </div>
+  <div class="border-div">
+    <BindingTextInputs />
+  </div>
+  <div class="border-div">
+    <BindingNumericInputs />
+  </div>
+  <div class="border-div">
+    <BindingCheckboxInput />
+  </div>
+  <div class="border-div">
+    <BindingGroupInputs />
+  </div>
+  <div class="border-div">
+    <BindingTextAreaInput />
+  </div>
+  <div class="border-div">
+    <BindingSelectBindings />
+  </div>
+  <div class="border-div">
+    <BindingEachBlock />
+  </div>
+  <div class="border-div">
+    <BindingMediaElements />
+  </div>
+  <div class="border-div">
+    <BindingDimensions />
+  </div>
 </main>
 
 <style>

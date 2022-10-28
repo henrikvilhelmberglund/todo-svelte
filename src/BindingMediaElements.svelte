@@ -3,6 +3,7 @@
   let time = 0;
   let duration;
   let paused = true;
+  let volume = 0.2;
 
   let showControls = true;
   let showControlsTimeout;
@@ -63,6 +64,7 @@
     bind:currentTime={time}
     bind:duration
     bind:paused
+    bind:volume
   >
     <track kind="captions" />
   </video>
