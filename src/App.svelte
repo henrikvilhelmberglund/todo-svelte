@@ -30,6 +30,7 @@
   import LifecyclebeforeUpdateafterUpdate from "./LifecyclebeforeUpdateafterUpdate.svelte";
   import Lifecycletick from "./Lifecycletick.svelte";
   import StoresWritable from "./StoresWritable.svelte";
+  import StoresReadable from "./StoresReadable.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -136,6 +137,9 @@
   </div>
   <div class="border-div">
     <StoresWritable />
+  </div>
+  <div class="border-div">
+    <StoresReadable />
   </div>
 </main>
 
