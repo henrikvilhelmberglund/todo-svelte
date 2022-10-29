@@ -29,8 +29,12 @@
   import LifecycleonDestroy from "./LifecycleonDestroy.svelte";
   import LifecyclebeforeUpdateafterUpdate from "./LifecyclebeforeUpdateafterUpdate.svelte";
   import Lifecycletick from "./Lifecycletick.svelte";
-  import StoresWritable from "./StoresWritable.svelte";
-  import StoresReadable from "./StoresReadable.svelte";
+  import StoreWritable from "./StoreWritable.svelte";
+  import StoreReadable from "./StoreReadable.svelte";
+  import StoreCustom from "./StoreCustom.svelte";
+  import BindingStore from "./BindingStore.svelte";
+  import MotionTweened from "./MotionTweened.svelte";
+  import MotionSpring from "./MotionSpring.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -136,10 +140,22 @@
     <Lifecycletick />
   </div>
   <div class="border-div">
-    <StoresWritable />
+    <StoreWritable />
   </div>
   <div class="border-div">
-    <StoresReadable />
+    <StoreReadable />
+  </div>
+  <div class="border-div">
+    <StoreCustom />
+  </div>
+  <div class="border-div">
+    <BindingStore />
+  </div>
+  <div class="border-div">
+    <MotionTweened />
+  </div>
+  <div class="border-div">
+    <MotionSpring />
   </div>
 </main>
 
