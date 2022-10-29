@@ -26,6 +26,8 @@
   import BindingComponent from "./BindingComponent.svelte";
   import BindingComponentInstance from "./BindingComponentInstance.svelte";
   import LifecycleonMount from "./LifecycleonMount.svelte";
+  import LifecycleonDestroy from "./LifecycleonDestroy.svelte";
+  import LifecyclebeforeUpdateafterUpdate from "./LifecyclebeforeUpdateafterUpdate.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -120,6 +122,12 @@
   </div>
   <div class="border-div">
     <LifecycleonMount />
+  </div>
+  <div class="border-div">
+    <LifecycleonDestroy />
+  </div>
+  <div class="border-div">
+    <LifecyclebeforeUpdateafterUpdate />
   </div>
 </main>
 
