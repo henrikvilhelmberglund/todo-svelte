@@ -35,6 +35,7 @@
   import BindingStore from "./BindingStore.svelte";
   import MotionTweened from "./MotionTweened.svelte";
   import MotionSpring from "./MotionSpring.svelte";
+  import Transitions from "./Transitions.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -156,6 +157,9 @@
   </div>
   <div class="border-div">
     <MotionSpring />
+  </div>
+  <div class="border-div">
+    <Transitions />
   </div>
 </main>
 
