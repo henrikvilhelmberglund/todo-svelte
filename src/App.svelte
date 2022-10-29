@@ -28,6 +28,7 @@
   import LifecycleonMount from "./LifecycleonMount.svelte";
   import LifecycleonDestroy from "./LifecycleonDestroy.svelte";
   import LifecyclebeforeUpdateafterUpdate from "./LifecyclebeforeUpdateafterUpdate.svelte";
+  import Lifecycletick from "./Lifecycletick.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -128,6 +129,9 @@
   </div>
   <div class="border-div">
     <LifecyclebeforeUpdateafterUpdate />
+  </div>
+  <div class="border-div">
+    <Lifecycletick />
   </div>
 </main>
 
