@@ -23,6 +23,9 @@
   import BindingMediaElements from "./BindingMediaElements.svelte";
   import BindingDimensions from "./BindingDimensions.svelte";
   import BindingThis from "./BindingThis.svelte";
+  import BindingComponent from "./BindingComponent.svelte";
+  import BindingComponentInstance from "./BindingComponentInstance.svelte";
+  import LifecycleonMount from "./LifecycleonMount.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -106,7 +109,17 @@
     <BindingDimensions />
   </div>
   <div class="border-div">
-    <BindingThis />
+    <!-- 60% CPU o_O -->
+    <!-- <BindingThis /> -->
+  </div>
+  <div class="border-div">
+    <BindingComponent />
+  </div>
+  <div class="border-div">
+    <BindingComponentInstance />
+  </div>
+  <div class="border-div">
+    <LifecycleonMount />
   </div>
 </main>
 

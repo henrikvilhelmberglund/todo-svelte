@@ -4,7 +4,7 @@
   let canvas;
 
   onMount(() => {
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext("2d", { willReadFrequently: true });
     let frame = requestAnimationFrame(loop);
 
     function loop(t) {
