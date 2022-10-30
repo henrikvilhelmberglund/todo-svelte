@@ -58,6 +58,7 @@
   import SpecialElementscomponent from "./SpecialElementscomponent.svelte";
   import SpecialElementselement from "./SpecialElementselement.svelte";
   import SpecialElementswindow from "./SpecialElementswindow.svelte";
+  import SpecialElementswindowbindings from "./SpecialElementswindowbindings.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -249,6 +250,12 @@
   <div class="border-div">
     <SpecialElementswindow />
   </div>
+  <!-- 
+    needs its own page
+    <div class="border-div">
+      <SpecialElementswindowbindings />
+    </div>
+  -->
 </main>
 
 <style>
