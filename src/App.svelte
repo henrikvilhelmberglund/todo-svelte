@@ -66,6 +66,7 @@
   import ModuleContextSharingCode from "./ModuleContextSharingCode.svelte";
   import ModuleContextExports from "./ModuleContextExports.svelte";
   import Debuggingdebug from "./Debuggingdebug.svelte";
+  import Congratulations from "./Congratulations.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -283,6 +284,9 @@
   </div>
   <div class="border-div">
     <Debuggingdebug />
+  </div>
+  <div class="border-div">
+    <Congratulations />
   </div>
 </main>
 
