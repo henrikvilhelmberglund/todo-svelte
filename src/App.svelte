@@ -51,6 +51,7 @@
   import AdvancedStylingstyleDirective from "./AdvancedStylingstyleDirective.svelte";
   import ComponentCompositionSlots from "./ComponentCompositionSlots.svelte";
   import ComponentCompositionNamedSlots from "./ComponentCompositionNamedSlots.svelte";
+  import ComponentCompositionCheckingForSlotContent from "./ComponentCompositionCheckingForSlotContent.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -220,6 +221,9 @@
   </div>
   <div class="border-div">
     <ComponentCompositionNamedSlots />
+  </div>
+  <div class="border-div">
+    <ComponentCompositionCheckingForSlotContent />
   </div>
 </main>
 
