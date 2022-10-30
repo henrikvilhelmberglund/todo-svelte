@@ -44,6 +44,7 @@
   import TransitionsKeyblocks from "./TransitionsKeyblocks.svelte";
   import Animations from "./Animations.svelte";
   import ActionsuseDirective from "./ActionsuseDirective.svelte";
+  import ActionsAddingParameters from "./ActionsAddingParameters.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -192,6 +193,9 @@
   </div>
   <div class="border-div">
     <ActionsuseDirective />
+  </div>
+  <div class="border-div">
+    <ActionsAddingParameters />
   </div>
 </main>
 
