@@ -50,6 +50,7 @@
   import AdvancedStylingInlineStyles from "./AdvancedStylingInlineStyles.svelte";
   import AdvancedStylingstyleDirective from "./AdvancedStylingstyleDirective.svelte";
   import ComponentCompositionSlots from "./ComponentCompositionSlots.svelte";
+  import ComponentCompositionNamedSlots from "./ComponentCompositionNamedSlots.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -216,6 +217,9 @@
   </div>
   <div class="border-div">
     <ComponentCompositionSlots />
+  </div>
+  <div class="border-div">
+    <ComponentCompositionNamedSlots />
   </div>
 </main>
 
