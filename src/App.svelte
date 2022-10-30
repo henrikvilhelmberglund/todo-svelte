@@ -53,6 +53,7 @@
   import ComponentCompositionNamedSlots from "./ComponentCompositionNamedSlots.svelte";
   import ComponentCompositionCheckingForSlotContent from "./ComponentCompositionCheckingForSlotContent.svelte";
   import ComponentCompositionSlotProps from "./ComponentCompositionSlotProps.svelte";
+  import ContextApIsetContextandgetContext from "./ContextAPIsetContextandgetContext.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -228,6 +229,9 @@
   </div>
   <div class="border-div">
     <ComponentCompositionSlotProps />
+  </div>
+  <div class="border-div">
+    <ContextApIsetContextandgetContext />
   </div>
 </main>
 
