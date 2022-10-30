@@ -42,6 +42,7 @@
   import TransitionsLocal from "./TransitionsLocal.svelte";
   import TransitionsDeferred from "./TransitionsDeferred.svelte";
   import TransitionsKeyblocks from "./TransitionsKeyblocks.svelte";
+  import Animations from "./Animations.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -184,6 +185,9 @@
   </div>
   <div class="border-div">
     <TransitionsKeyblocks />
+  </div>
+  <div class="border-div">
+    <Animations />
   </div>
 </main>
 
