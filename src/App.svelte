@@ -55,6 +55,7 @@
   import ComponentCompositionSlotProps from "./ComponentCompositionSlotProps.svelte";
   import ContextApIsetContextandgetContext from "./ContextAPIsetContextandgetContext.svelte";
   import SpecialElementsself from "./SpecialElementsself.svelte";
+  import SpecialElementscomponent from "./SpecialElementscomponent.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -236,6 +237,9 @@
   </div>
   <div class="border-div">
     <SpecialElementsself />
+  </div>
+  <div class="border-div">
+    <SpecialElementscomponent />
   </div>
 </main>
 
