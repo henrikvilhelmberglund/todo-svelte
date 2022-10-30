@@ -46,6 +46,7 @@
   import ActionsuseDirective from "./ActionsuseDirective.svelte";
   import ActionsAddingParameters from "./ActionsAddingParameters.svelte";
   import AdvancedStylingclassDirective from "./AdvancedStylingclassDirective.svelte";
+  import AdvancedStylingShorthandclassDirective from "./AdvancedStylingShorthandclassDirective.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -200,6 +201,9 @@
   </div>
   <div class="border-div">
     <AdvancedStylingclassDirective />
+  </div>
+  <div class="border-div">
+    <AdvancedStylingShorthandclassDirective />
   </div>
 </main>
 

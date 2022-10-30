@@ -11,7 +11,7 @@
     console.log("nice block");
   }
   $: if (count >= 10) {
-    console.log("count is dangerously high!");
+    alert("count is dangerously high!");
     count = 9;
   }
 </script>
