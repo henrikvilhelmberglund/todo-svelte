@@ -62,6 +62,7 @@
   import SpecialElementsbody from "./SpecialElementsbody.svelte";
   import SpecialElementshead from "./SpecialElementshead.svelte";
   import SpecialElementsoptions from "./SpecialElementsoptions.svelte";
+  import SpecialElementsfragment from "./SpecialElementsfragment.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -267,6 +268,9 @@
   </div>
   <div class="border-div">
     <SpecialElementsoptions />
+  </div>
+  <div class="border-div">
+    <SpecialElementsfragment />
   </div>
 </main>
 
