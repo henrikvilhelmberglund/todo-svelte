@@ -43,6 +43,7 @@
   import TransitionsDeferred from "./TransitionsDeferred.svelte";
   import TransitionsKeyblocks from "./TransitionsKeyblocks.svelte";
   import Animations from "./Animations.svelte";
+  import ActionsuseDirective from "./ActionsuseDirective.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -188,6 +189,9 @@
   </div>
   <div class="border-div">
     <Animations />
+  </div>
+  <div class="border-div">
+    <ActionsuseDirective />
   </div>
 </main>
 
