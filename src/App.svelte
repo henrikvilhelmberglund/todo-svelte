@@ -36,6 +36,12 @@
   import MotionTweened from "./MotionTweened.svelte";
   import MotionSpring from "./MotionSpring.svelte";
   import Transitions from "./Transitions.svelte";
+  import TransitionsCustomCSS from "./TransitionsCustomCSS.svelte";
+  import TransitionsCustomJS from "./TransitionsCustomJS.svelte";
+  import TransitionsEvents from "./TransitionsEvents.svelte";
+  import TransitionsLocal from "./TransitionsLocal.svelte";
+  import TransitionsDeferred from "./TransitionsDeferred.svelte";
+  import TransitionsKeyblocks from "./TransitionsKeyblocks.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -160,6 +166,24 @@
   </div>
   <div class="border-div">
     <Transitions />
+  </div>
+  <div class="border-div">
+    <TransitionsCustomCSS />
+  </div>
+  <div class="border-div">
+    <TransitionsCustomJS />
+  </div>
+  <div class="border-div">
+    <TransitionsEvents />
+  </div>
+  <div class="border-div">
+    <TransitionsLocal />
+  </div>
+  <div class="border-div">
+    <TransitionsDeferred />
+  </div>
+  <div class="border-div">
+    <TransitionsKeyblocks />
   </div>
 </main>
 
