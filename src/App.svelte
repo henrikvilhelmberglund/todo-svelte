@@ -52,6 +52,7 @@
   import ComponentCompositionSlots from "./ComponentCompositionSlots.svelte";
   import ComponentCompositionNamedSlots from "./ComponentCompositionNamedSlots.svelte";
   import ComponentCompositionCheckingForSlotContent from "./ComponentCompositionCheckingForSlotContent.svelte";
+  import ComponentCompositionSlotProps from "./ComponentCompositionSlotProps.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -224,6 +225,9 @@
   </div>
   <div class="border-div">
     <ComponentCompositionCheckingForSlotContent />
+  </div>
+  <div class="border-div">
+    <ComponentCompositionSlotProps />
   </div>
 </main>
 
