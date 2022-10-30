@@ -48,6 +48,8 @@
   import AdvancedStylingclassDirective from "./AdvancedStylingclassDirective.svelte";
   import AdvancedStylingShorthandclassDirective from "./AdvancedStylingShorthandclassDirective.svelte";
   import AdvancedStylingInlineStyles from "./AdvancedStylingInlineStyles.svelte";
+  import AdvancedStylingstyleDirective from "./AdvancedStylingstyleDirective.svelte";
+  import ComponentCompositionSlots from "./ComponentCompositionSlots.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -208,6 +210,12 @@
   </div>
   <div class="border-div">
     <AdvancedStylingInlineStyles />
+  </div>
+  <div class="border-div">
+    <AdvancedStylingstyleDirective />
+  </div>
+  <div class="border-div">
+    <ComponentCompositionSlots />
   </div>
 </main>
 
