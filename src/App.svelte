@@ -64,6 +64,7 @@
   import SpecialElementsoptions from "./SpecialElementsoptions.svelte";
   import SpecialElementsfragment from "./SpecialElementsfragment.svelte";
   import ModuleContextSharingCode from "./ModuleContextSharingCode.svelte";
+  import ModuleContextExports from "./ModuleContextExports.svelte";
 
   function handleClick() {
     alert("Button Clicked");
@@ -275,6 +276,9 @@
   </div>
   <div class="border-div">
     <ModuleContextSharingCode />
+  </div>
+  <div class="border-div">
+    <ModuleContextExports />
   </div>
 </main>
 
